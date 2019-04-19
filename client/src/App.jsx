@@ -6,41 +6,7 @@ import {Dropdown} from 'reactjs-dropdown-component';
 class App extends Component {
     constructor(){
     super()
-    this.state = {
-      styles: [
-        {
-          id: 0,
-          title: 'Apple',
-          selected: false,
-          key: 'styles'
-        },
-        {
-          id: 1,
-          title: 'Orange',
-          selected: false,
-          key: 'styles'
-        },
-        {
-          id: 2,
-          title: 'Grape',
-          selected: false,
-          key: 'styles'
-        },
-        {
-          id: 3,
-          title: 'Pomegranate',
-          selected: false,
-          key: 'styles'
-        },
-        {
-          id: 4,
-          title: 'Strawberry',
-          selected: false,
-          key: 'styles'
-        }
-      ]
-    }
-  }
+    this.state = {}
 
   toggleSelected = (id, key) => {
     let temp = JSON.parse(JSON.stringify(this.state[key]))
